@@ -2,6 +2,8 @@ function guessNumber(){
 	var number1=Math.floor((Math.random()*10)+1);
 	var secretNumber=Math.floor((Math.random()*100)+1+number1);
 	var number2=Math.floor((Math.random()*100)+1+secretNumber);
+	//in case you want to test it and know the numbers in advance
+	//alert(number1+" "+secretNumber+" "+number2);
 	do{
 		var x=prompt("Guess the number between 1 and 100");
 		if (x>secretNumber){
